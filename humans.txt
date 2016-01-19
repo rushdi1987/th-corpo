@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <Rushdi> -- <Desigber> -- <twitter>
 
 # THANKS
 
-    <name>
+    <RUSHDI>
 
 # TECHNOLOGY COLOPHON
 

@@ -700,15 +700,22 @@ aside  h1, aside  h2,  aside h3,  aside h4,  aside h5{
 32. Tablet and Desktop Screen
 =============================================== */
 @media screen and (min-width:768px) {
+
 	.navbar {
 		position: absolute;
 		left: 0;
 		right: 0;
 		z-index: 999;
 	}	
+	.page .navbar {
+		position: relative;
+	}
 	.navbar-brand {
 		padding: 17px 35px 15px;
 		height: 70px;
+	}
+	.page .bootstrap-slider {
+		margin-top: -20px;
 	}
 	.bootstrap-slider, .carousel, .carousel .item {
 		height: 525px;
@@ -780,6 +787,7 @@ aside  h1, aside  h2,  aside h3,  aside h4,  aside h5{
 
 =============================================== */
 @media screen and (min-width:1200px) {
+
 	.nav>li {
 		padding: 36px 15px 0;
 	}	
