@@ -26,6 +26,7 @@
 @theme-color-2:                 rgba(0, 0, 0, 0.6);
 @custom-link-color:             lighten(@gray-light, 40%); //this will change pager, pagination, btn text color
 @custom-link-hover-color:       #fff;
+@custom-navbar-inverse-bg:      rgba(17, 17, 17, 0.65);
 
 
 
@@ -241,7 +242,7 @@
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-@dropdown-bg:                    #fff;
+@dropdown-bg:                    @custom-navbar-inverse-bg; //changed default #fff
 //** Dropdown menu `border-color`.
 @dropdown-border:                rgba(0,0,0,.15);
 //** Dropdown menu `border-color` **for IE8**.
@@ -250,11 +251,11 @@
 @dropdown-divider-bg:            #e5e5e5;
 
 //** Dropdown link text color.
-@dropdown-link-color:            @gray-dark;
+@dropdown-link-color:            @navbar-inverse-link-color; //changed default @gray-dark
 //** Hover color for dropdown links.
-@dropdown-link-hover-color:      darken(@gray-dark, 5%);
+@dropdown-link-hover-color:      #fff; //changed default darken(@gray-dark, 5%)
 //** Hover background for dropdown links.
-@dropdown-link-hover-bg:         #f5f5f5;
+@dropdown-link-hover-bg:         @navbar-inverse-bg;
 
 //** Active dropdown menu item text color.
 @dropdown-link-active-color:     @component-active-color;

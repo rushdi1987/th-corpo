@@ -83,14 +83,14 @@ img {
 	max-width: 100%;
 }
 /* =============================================
-2.Default Styles
+>Default Styles
 =============================================== */
 .btn-default {
 	background-image: none;
 }
 
 /* ==============================================
-2.Navbar Styles
+>Navbar Styles
 =============================================== */
 .navbar {
 	border-radius: 0;
@@ -108,7 +108,7 @@ img {
 	border:none;
 }
 
-.navbar-nav>li>a{
+.navbar-nav>li>a, .dropdown-menu>li>a{
 	font-size: 10px;
 	line-height: 12px;
 	padding: 4px 7px;
@@ -206,7 +206,7 @@ transform: translate(0px, 0px) rotate(0deg) skew(-25deg, 0deg) scale(1, 1);
 
 
 /* ==============================================
-Highlights
+>Highlights
 =============================================== */
 .highlights, .process, .team, .clients {
 	padding: 30px 0;
@@ -285,7 +285,7 @@ Features
 }
 
 /* ==============================================
-Choices
+>Choices
 =============================================== */
 .choices {
 	padding-top: 30px;
@@ -388,7 +388,7 @@ Choices
 	 line-height: 14px;
 }
 /* ==============================================
-Clients
+>Clients
 =============================================== */
 .clients li {
 
@@ -400,7 +400,7 @@ Clients
 
 
 /* ==============================================
-5.Modal
+>Modal
 =============================================== */
 .modal-header,.modal-footer, .modal-footer button {
     background-color: #222;
@@ -412,7 +412,7 @@ Clients
 
 
 /* ==============================================
-6.Footer
+>Footer
 =============================================== */
 footer {
 	background-color: #2f2f2f;
@@ -594,7 +594,7 @@ Scroll Up
 	font-size: 15px;
 	font-weight: 700;
 	line-height: 15px;
-	color: #aaa;
+	color: #f0484a;
 }
 
 
@@ -701,13 +701,29 @@ aside  h1, aside  h2,  aside h3,  aside h4,  aside h5{
 =============================================== */
 @media screen and (min-width:768px) {
 
-	.navbar {
+	.navbar-position {
 		position: absolute;
 		left: 0;
 		right: 0;
 		z-index: 999;
-	}	
-	.page .navbar {
+	}
+	.dropdown-menu {
+		top: 80%;
+	}
+	.navbar-nav>li.dropdown {
+		cursor: pointer;
+		padding-bottom: 14px;
+	}
+	.navbar-nav>li>.dropdown-menu {
+		min-width: 110px;
+		margin-top: 13px;
+	}
+	li.dropdown>a.dropdown-toggle{
+		
+    	display: inline;
+
+	}
+	.page .navbar-position {
 		position: relative;
 	}
 	.navbar-brand {
