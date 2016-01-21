@@ -347,11 +347,13 @@ Features
 	height: 130px;
 	margin: 5px auto;
 }
+.step h4, .step h5 {
+	padding-top: 10px;
+}
 
-.step i {
+.step span {
 	font-size: 45px;
 	line-height: 45px;
-	padding: 5px 0;
 }
 /* ==============================================
 >Team
